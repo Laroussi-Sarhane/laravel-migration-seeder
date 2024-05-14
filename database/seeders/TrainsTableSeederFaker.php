@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 use App\Models\train;
 use Illuminate\Support\Str;
 
-// $faker = new Faker();
+
 class TrainsTableSeederFaker extends Seeder
 {
     /**
@@ -30,7 +30,7 @@ class TrainsTableSeederFaker extends Seeder
             $new_train->number_of_hangar= $faker->boolean();
             $new_train->at_time= $faker->boolean();
             $new_train->delayed= $faker->boolean();
-            $new_train->nation= $faker->city();
+
             $new_train->save();
 
         }
